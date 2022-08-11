@@ -1,6 +1,6 @@
 # cesium_quickstart
 
-cesium + vue 快速入门应用
+cesium+vue入门应用
 
 > 参考: [https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/)
 
