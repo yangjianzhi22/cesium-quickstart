@@ -37,7 +37,7 @@ npm install cesium
 >
 > Treeshaking: 启用CesiumJS模块的tree-shaking，以便未使用的模块不包含在生产包中
 > 
-> npm install strip-pragma-loader --save-dev
+> **npm install strip-pragma-loader --save-dev**
 
 ```
 const webpack = require('webpack')
