@@ -36,11 +36,10 @@ npm install cesium
 > 需要在服务器上托管一些静态文件, 并配置CESIUM_BASE_URL
 >
 > Treeshaking: 启用CesiumJS模块的tree-shaking，以便未使用的模块不包含在生产包中
+> 
+> npm install strip-pragma-loader --save-dev
 
 ```
-npm install strip-pragma-loader --save-dev
-
-# vue.config.js
 const webpack = require('webpack')
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
