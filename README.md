@@ -1,4 +1,4 @@
-# cesium_quickstart
+# cesium-quickstart
 
 cesium+vue入门应用
 
