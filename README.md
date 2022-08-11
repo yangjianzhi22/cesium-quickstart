@@ -28,8 +28,10 @@ vue create cesium_quickstart
 
 ```
 // 安装cesium
-npm -S i cesium
+npm install cesium
 ```
+
+- vue.config.js
 
 > 需要在服务器上托管一些静态文件, 并配置CESIUM_BASE_URL
 >
