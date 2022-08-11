@@ -1,28 +1,40 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div id="map"></div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import {
+  Viewer,
+  Cartesian3
+} from "cesium";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  mounted() {
+    let viewer = new Viewer("map", {
+      imageryProvider: undefined,
+      terrainProvider: undefined,
+
+      // 隐藏小部件
+      animation: true,
+      timeline: true,
+      baseLayerPicker: false,
+      fullscreenButton: false,
+      geocoder: false,
+      homeButton: false,
+      infoBox: false,
+      sceneModePicker: false,
+      selectionIndicator: false,
+      navigationHelpButton: false,
+    });
+
+    viewer.camera.flyTo({
+      destination : Cartesian3.fromDegrees(64.3474, 45.85465, 4500000.0),
+      duration: 1,
+    });
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
